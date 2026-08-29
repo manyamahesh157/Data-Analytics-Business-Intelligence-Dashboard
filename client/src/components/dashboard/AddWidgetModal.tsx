@@ -38,6 +38,7 @@ export const AddWidgetModal: React.FC<AddWidgetModalProps> = ({
     { type: 'bar', label: 'Bar Chart', icon: BarChart3 },
     { type: 'pie', label: 'Pie / Donut', icon: PieChart },
     { type: 'area', label: 'Area Chart', icon: Activity },
+    { type: 'treemap', label: 'D3.js Treemap', icon: PieChart },
     { type: 'kpi_card', label: 'KPI Card', icon: Activity },
     { type: 'table', label: 'Data Table', icon: Table },
     { type: 'gauge', label: 'Gauge', icon: Gauge },

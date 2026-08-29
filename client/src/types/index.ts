@@ -70,7 +70,7 @@ export interface ImportedDataset {
   updated_at: string;
 }
 
-export type WidgetType = 'line' | 'bar' | 'pie' | 'area' | 'scatter' | 'kpi_card' | 'table' | 'gauge';
+export type WidgetType = 'line' | 'bar' | 'pie' | 'area' | 'scatter' | 'kpi_card' | 'table' | 'gauge' | 'treemap';
 
 export interface WidgetGridLayout {
   x: number;

@@ -223,9 +223,14 @@ BEGIN
     '{"colors": ["#10B981"], "showLegend": false, "showGrid": true, "numberFormat": "currency"}'::jsonb, 0),
 
     ('40000000-0000-0000-0000-000000000008', v_dash_ecom_id, v_org_id, v_dataset_ecom_id, 'Discount vs Profit Correlation', 'scatter',
-    '{"x": 0, "y": 4, "w": 12, "h": 4, "minW": 6, "minH": 3}'::jsonb,
+    '{"x": 0, "y": 4, "w": 6, "h": 4, "minW": 4, "minH": 3}'::jsonb,
     '{"metrics": ["discount", "profit"], "dimensions": ["category"], "filters": [], "limit": 50}'::jsonb,
-    '{"colors": ["#EC4899"], "showLegend": true, "showGrid": true, "numberFormat": "standard"}'::jsonb, 0);
+    '{"colors": ["#EC4899"], "showLegend": true, "showGrid": true, "numberFormat": "standard"}'::jsonb, 0),
+
+    ('40000000-0000-0000-0000-000000000009', v_dash_ecom_id, v_org_id, v_dataset_ecom_id, 'D3.js Regional Sales Treemap Breakdown', 'treemap',
+    '{"x": 6, "y": 4, "w": 6, "h": 4, "minW": 4, "minH": 3}'::jsonb,
+    '{"metrics": ["sales"], "dimensions": ["category", "region"], "groupBy": ["category", "region"], "limit": 20}'::jsonb,
+    '{"colors": ["#3B82F6", "#10B981", "#F59E0B"], "showLegend": true, "numberFormat": "currency"}'::jsonb, 0);
 
     -- 10. KPI Definitions
     INSERT INTO kpi_definitions (id, org_id, dataset_id, name, code, description, formula_type, metric_column, target_value, warning_threshold, critical_threshold, unit, format, period_type, is_active, created_by) VALUES
