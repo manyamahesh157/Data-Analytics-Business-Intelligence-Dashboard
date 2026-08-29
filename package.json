@@ -1,0 +1,13 @@
+{
+  "name": "bi-analytics-dashboard-platform",
+  "version": "1.0.0",
+  "description": "Production-Ready BI & Business Intelligence Dashboard Platform",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "docker:up": "docker-compose up --build -d",
+    "docker:down": "docker-compose down"
+  }
+}
